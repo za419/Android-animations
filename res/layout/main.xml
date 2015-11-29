@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/mainLayout"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp"
+	android:animateLayoutChanges="true"
+	android:layoutAnimation="@anim/fadeinlayout">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Choose an animation"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Fade"
+			android:layout_width="match_parent"
+			android:id="@+id/mainFadeButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Scale"
+			android:layout_width="match_parent"
+			android:id="@+id/mainScaleButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Spin and Fade"
+			android:layout_width="match_parent"
+			android:id="@+id/mainSpinFadeButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Spin and Scale"
+			android:layout_width="match_parent"
+			android:id="@+id/mainSpinScaleButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Slide Left"
+			android:layout_width="match_parent"
+			android:id="@+id/mainSlideLeftButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Slide Right"
+			android:layout_width="match_parent"
+			android:id="@+id/mainSlideRightButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Slide Top"
+			android:layout_width="match_parent"
+			android:id="@+id/mainSlideTopButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Slide Bottom"
+			android:layout_width="match_parent"
+			android:id="@+id/mainSlideBottomButton"
+			android:layout_weight="1.0"
+			android:onClick="switchLayout"/>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Quit"
+		android:layout_width="match_parent"
+		android:layout_marginTop="250dp"
+		android:layout_gravity="bottom|center_horizontal"
+		android:id="@+id/mainQuitButton"
+		android:onClick="switchLayout"/>
+
+</LinearLayout>
+

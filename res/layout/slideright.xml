@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/slideInRightLayout"
+	android:layout_margin="10dp"
+	android:animateLayoutChanges="true"
+	android:layoutAnimation="@anim/slideinrightlayout">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Slide from the right"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/slideInRightTitle"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="This layout slides into view from the right"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:id="@+id/slideInRightAnnouncer"
+		android:layout_marginTop="25dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="10dp"/>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical"
+			android:id="@+id/wordsLayout"
+			android:animateLayoutChanges="true"/>
+
+	</ScrollView>
+
+</LinearLayout>
+
